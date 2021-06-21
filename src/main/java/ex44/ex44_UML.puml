@@ -1,0 +1,27 @@
+@startuml
+
+class ProductSearch {
+    +main(args : String[])
+
+    input : Scanner;
+    list : List<String>
+    call : ProcessData
+    names : String[]
+    quantity : String[]
+    price : String[]
+    complete : String[]
+    userSearch : String
+
+    }
+
+   class ProcessData {
+    
+    +traverseFile(list : List<String>, userSearch : String) : String[]
+    objects : String[]
+    check : int
+
+    }
+
+    ProductSearch o--> ProcessData
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class WordFinder {
+
+    input : Scanner
+    fileCall : Scanner
+    callFile : PrintWriter
+    call : GenerateText
+    +main(args : String[])
+    fileName : String
+    text : List<String>
+    }
+
+WordFinder o--> GenerateText
+class GenerateText {
+
+    +newList(text : List<String>) : List<String>
+    +fileText(text : List<String>) : String
+    totalText : String
+    }
+
+@enduml

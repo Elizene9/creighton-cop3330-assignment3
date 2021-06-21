@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Solution42 {
+
+    +main(args : String[])
+    }
+
+class FormatList {
+    +formatter (lnames : List<String>, fnames : List<String>, salaries : List<String>) : List<List<String>>
+
+    }
+
+Solution42 o-->FormatList
+@enduml

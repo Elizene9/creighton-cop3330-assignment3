@@ -1,0 +1,23 @@
+@startuml
+
+class WebsiteGenerator{
+
+    +main(args : String[])
+    -sitename : String
+    -input : Scanner
+    author : String
+    ans1 : char
+    ans2 : char
+
+    }
+
+WebsiteGenerator o--> CreateFiles
+class CreateFiles {
+
+    +html(sitename : String, author : String) : String
+    +css(sitename : String, ans : char) : String
+    +js(sitename : String, ans : char) : String
+
+    }
+
+@enduml
